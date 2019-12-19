@@ -15,7 +15,7 @@ let reader path =
     data.[1..]
     |> Array.map toObservation
 
-let trainingPath = __SOURCE_DIRECTORY__ + @"../../../Data/trainingsample.csv"
+let trainingPath = __SOURCE_DIRECTORY__ + @"../../Data/training-sample.csv"
 let training = reader trainingPath
 
 let train (trainingset:Observation[]) (dist:Distance) =
@@ -39,7 +39,7 @@ let euclideanDistance (pixels1,pixels2) =
 
 let euclideanModel = train training euclideanDistance
 
-let validationPath = __SOURCE_DIRECTORY__ + @"../../../Data/validationsample.csv"
+let validationPath = __SOURCE_DIRECTORY__ + @"../../Data/validation-sample.csv"
 let validation = reader validationPath
 
 let evaluate (validationSet:Observation[]) (classifier:Classifier) = 
