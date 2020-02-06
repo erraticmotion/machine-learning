@@ -23,7 +23,7 @@ let parseLine (line:string) =
     (label, message)
 
 let fileName = "SMSSpamCollection"
-let path = __SOURCE_DIRECTORY__ + @"\..\Data\" + fileName
+let path = __SOURCE_DIRECTORY__ + @"/" + fileName
 
 let dataset =
     File.ReadAllLines path
