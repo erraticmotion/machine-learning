@@ -1,6 +1,6 @@
 # Machine Learning
 
-Machine Learning in F#
+Machine Learning in F# and Python
 
 Source code when following the projects in the [Machine Learning Projects for .NET Developers][ml] book.
 
